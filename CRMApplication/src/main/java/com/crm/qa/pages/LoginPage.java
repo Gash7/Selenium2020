@@ -25,30 +25,25 @@ public class LoginPage extends TestBase{
 	WebElement crmLogo;
 
 //Initializing the page objects 
-public LoginPage()
-{ 
-	PageFactory.initElements(driver,this);
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
 	}
 
+	public String validateLoginPageTitle() {
+		return driver.getTitle();
+	}
 
-public String validateLoginPageTitle()
-{
-	return driver.getTitle();
-}
+	public boolean validateCRMImage() {
+		return crmLogo.isDisplayed();
 
-public boolean validateCRMImage()
-{
-	return crmLogo.isDisplayed();
-	
-}
+	}
 
-public HomePage login(String un,String pwd) throws InterruptedException
-{
-	username.sendKeys(un);
-	username.sendKeys(pwd);
-	Thread.sleep(3000);
-	submitBtn.click();
-	
-	return new HomePage();
-}
+	public HomePage login(String un, String pwd) throws InterruptedException {
+		username.sendKeys(un);
+		username.sendKeys(pwd);
+		Thread.sleep(3000);
+		submitBtn.click();
+
+		return new HomePage();
+	}
 }

@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88648" started-at="2020-01-31T09:53:09Z" finished-at="2020-01-31T09:54:37Z">
+  <suite name="Default suite" duration-ms="38317" started-at="2020-02-09T07:38:59Z" finished-at="2020-02-09T07:39:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88648" started-at="2020-01-31T09:53:09Z" finished-at="2020-01-31T09:54:37Z">
-      <class name="com.crm.qa.testcases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="setUp" is-config="true" duration-ms="15543" started-at="2020-01-31T15:23:09Z" finished-at="2020-01-31T15:23:24Z">
+    <test name="Default test" duration-ms="38317" started-at="2020-02-09T07:38:59Z" finished-at="2020-02-09T07:39:38Z">
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@7cf10a6f]" name="setUp" is-config="true" duration-ms="31278" started-at="2020-02-09T13:09:00Z" finished-at="2020-02-09T13:09:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="publicPageTitleTest()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="publicPageTitleTest" duration-ms="18" started-at="2020-01-31T15:23:24Z" finished-at="2020-01-31T15:23:24Z">
+        <test-method status="FAIL" signature="getValidateTitleTest()[pri:0, instance:com.crm.qa.testcases.HomePageTest@7cf10a6f]" name="getValidateTitleTest" duration-ms="76" started-at="2020-02-09T13:09:31Z" finished-at="2020-02-09T13:09:31Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.crm.qa.testcases.HomePageTest.getValidateTitleTest(HomePageTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- publicPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="tearDown" is-config="true" duration-ms="8450" started-at="2020-01-31T15:23:24Z" finished-at="2020-01-31T15:23:33Z">
+        </test-method> <!-- getValidateTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@7cf10a6f]" name="tearDown" is-config="true" duration-ms="6884" started-at="2020-02-09T13:09:31Z" finished-at="2020-02-09T13:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="setUp" is-config="true" duration-ms="21461" started-at="2020-01-31T15:23:33Z" finished-at="2020-01-31T15:23:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImageTest()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="crmLogoImageTest" duration-ms="156" started-at="2020-01-31T15:23:54Z" finished-at="2020-01-31T15:23:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crmLogoImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="tearDown" is-config="true" duration-ms="11837" started-at="2020-01-31T15:23:54Z" finished-at="2020-01-31T15:24:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="setUp" is-config="true" duration-ms="17265" started-at="2020-01-31T15:24:06Z" finished-at="2020-01-31T15:24:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="loginPage" duration-ms="4828" started-at="2020-01-31T15:24:24Z" finished-at="2020-01-31T15:24:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginTest@7cf10a6f]" name="tearDown" is-config="true" duration-ms="9058" started-at="2020-01-31T15:24:28Z" finished-at="2020-01-31T15:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.LoginTest -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
